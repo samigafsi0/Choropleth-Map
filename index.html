@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choropleth Map</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"
+      integrity="sha512-M7nHCiNUOwFt6Us3r8alutZLm9qMt4s9951uo8jqO4UwJ1hziseL6O3ndFyigx6+LREfZqnhHxYjKRJ8ZQ69DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"
+      integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="title">
+        <h1>United States Educational Attainment</h1>
+      </div>
+      <div id="description">
+        <h4>
+          Percentage of adults age 25 and older with a bachelor's degree or
+          higher (2010-2014)
+        </h4>
+      </div>
+      <svg id="graph"></svg>
+      <div id="tooltip"></div>
+      <svg id="legend"></svg>
+    </div>
+  </body>
+  <script src="script.js" defer></script>
+  <script
+    src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    defer
+  ></script>
+</html>
